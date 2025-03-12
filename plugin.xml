@@ -19,6 +19,7 @@
 
     <!-- ios -->
     <platform name="ios">
+        <hook type="after_prepare" src="hooks/after_prepare_modify_bridging_header.js" />
         <config-file parent="/*" target="config.xml">
             <feature name="ThemeDetection">
                 <param name="ios-package" value="ThemeDetection" />

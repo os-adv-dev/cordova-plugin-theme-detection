@@ -9,3 +9,7 @@ exports.isAvailable = function(success, error) {
 exports.isDarkModeEnabled = function(success, error) {
   exec(success, error, CLASS, "isDarkModeEnabled", []);
 };
+
+exports.onThemeChanged = function(success, error) {
+  exec(success, error, CLASS, "onThemeChanged", []);
+};
